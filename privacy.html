@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<title>KIP privacy policy</title>
+<meta name="description" content="How KIP handles your data and your Google account.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Plaster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="./"><img src="icon.svg" alt=""><span class="logo">KIP</span></a>
+    <nav><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+  </header>
+
+  <h1>Privacy policy</h1>
+  <p class="muted">Last updated: 18 November 2026</p>
+
+  <p>KIP is a personal budgeting app for Windows and Android. The short version: Your data stays on your devices and in your own Google Drive, encrypted. Nobody else gets it.</p>
+
+  <h2>What KIP stores, and where</h2>
+  <ul>
+    <li>Your accounts, transactions, budgets, categories, invoices and receipts are kept in an encrypted database on each of your own devices. The key is protected by your PIN.</li>
+    <li>There is no KIP server. Nothing is sent to the people who make KIP.</li>
+    <li>KIP uses no analytics, no advertising, no tracking and no third-party AI services.</li>
+  </ul>
+
+  <h2>Your Google account</h2>
+  <p>KIP uses Google sign-in only to keep your devices in sync. It asks for a single permission:</p>
+  <ul>
+    <li><strong>See, edit, create and delete only the specific Google Drive files that you use with this app</strong> (<code>https://www.googleapis.com/auth/drive.file</code>).</li>
+  </ul>
+  <p>With it, KIP creates a folder called "KIP sync" in your Drive and saves its sync files and copies of your invoice and receipt files there. Each file is encrypted on your device with a key that only your paired devices have, so Google stores data it can't read. KIP can't see any other files in your Drive, and it never reads your Gmail, contacts, calendar or profile beyond the sign-in itself.</p>
+  <p>Your Google sign-in token is stored only on your device, inside KIP's encrypted database.</p>
+
+  <h2>How Google data is used</h2>
+  <p>KIP's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. In plain words:</p>
+  <ul>
+    <li>Google data is used only to sync your own KIP data between your own devices.</li>
+    <li>It is never sold, shared, transferred to anyone else, or used for advertising.</li>
+    <li>No person reads it, and it isn't used to train any AI or machine-learning model.</li>
+  </ul>
+
+  <h2>Your bank feed</h2>
+  <p>If you connect a bank through Akahu, KIP gets read-only access to your transactions. Your Akahu tokens stay on your device, and KIP never sees or stores your bank password. You can revoke this at any time from your Akahu account at <a href="https://my.akahu.nz">my.akahu.nz</a>.</p>
+
+  <h2>Removing access and deleting data</h2>
+  <ul>
+    <li>In KIP, go to Settings, then Connections, then Sync, and choose <strong>Sign out of Google</strong>.</li>
+    <li>To fully revoke KIP's access, visit <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, choose KIP and select <strong>Remove access</strong>.</li>
+    <li>To delete your synced data, delete the "KIP sync" folder from your Google Drive.</li>
+    <li>To delete everything on a device, uninstall KIP from it.</li>
+  </ul>
+
+  <h2>Changes and questions</h2>
+  <p>If this policy changes, the new version will be posted here with a new date. For questions, <a href="https://github.com/FieldtripEli/kip-site/issues">open an issue on GitHub</a>.</p>
+
+  <footer>
+    <a href="./">KIP</a> · Made in Aotearoa New Zealand
+  </footer>
+</div>
+</body>
+</html>
